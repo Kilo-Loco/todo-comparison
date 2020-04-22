@@ -24,9 +24,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     private func buildTodosViewController() -> UIViewController {
+        let firebaseService = FirebaseService()
+        
         let sot = TodosSourceOfTruth()
         let view = TodosView(sot: sot)
-        let todosVC = TodosViewController(rootView: view)
+        let todosVC = TodosViewController(
+            firebaseService: firebaseService,
+            rootView: view
+        )
         return todosVC
     }
 }

@@ -12,7 +12,10 @@ import SwiftUI
 final class TodosViewController: UIHostingController<TodosView> {
     private var didTapAddToken: Cancellable?
     
-    override init(rootView: TodosView) {
+    private let firebaseService: FirebaseService
+    
+    init(firebaseService: FirebaseService, rootView: TodosView) {
+        self.firebaseService = firebaseService
         super.init(rootView: rootView)
         configureCommunication()
     }
@@ -33,7 +36,9 @@ final class TodosViewController: UIHostingController<TodosView> {
     }
     
     private func getTodos() {
-        
+        firebaseService.observeTodos { [weak self] todos in
+            self?.rootView.sot.todos = todos
+        }
     }
     
     private func showAddTodoAlert() {
@@ -55,6 +60,7 @@ final class TodosViewController: UIHostingController<TodosView> {
     }
     
     private func createTodo(with name: String) {
-        print("Next todo will have the name: \(name)")
+        let todo = Todo(name: name)
+        firebaseService.create(todo)
     }
 }

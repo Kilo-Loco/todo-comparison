@@ -24,9 +24,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     private func buildTodosViewController() -> UIViewController {
+        let amplifyService = AmplifyService()
+        
         let sot = TodosSourceOfTruth()
         let view = TodosView(sot: sot)
-        let todosVC = TodosViewController(rootView: view)
+        let todosVC = TodosViewController(amplifyService: amplifyService, rootView: view)
         return todosVC
     }
 }

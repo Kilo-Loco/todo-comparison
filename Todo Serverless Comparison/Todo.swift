@@ -13,3 +13,17 @@ struct Todo: Identifiable {
     let name: String
     let creationDate: TimeInterval
 }
+
+extension Todo {
+    init(name: String) {
+        self.init(id: nil, name: name, creationDate: Date().timeIntervalSince1970)
+    }
+    
+    init(listQueryItem: ListTodosQuery.Data.ListTodo.Item) {
+        self.init(
+            id: listQueryItem.id,
+            name: listQueryItem.name,
+            creationDate: listQueryItem.creationDate
+        )
+    }
+}

@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64F6E899CDD61F3C562CAF53 /* Pods_Todo_Serverless_Comparison.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8734C73BFFAE765288F5FFD /* Pods_Todo_Serverless_Comparison.framework */; };
 		9E0DEACD244FF32E001EB612 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0DEACC244FF32E001EB612 /* AppDelegate.swift */; };
 		9E0DEACF244FF32E001EB612 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0DEACE244FF32E001EB612 /* SceneDelegate.swift */; };
 		9E0DEAD3244FF330001EB612 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E0DEAD2244FF330001EB612 /* Assets.xcassets */; };
@@ -17,9 +18,13 @@
 		9E0DEAE5244FF47C001EB612 /* TodosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0DEAE4244FF47C001EB612 /* TodosView.swift */; };
 		9E0DEAE7244FF646001EB612 /* TodosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0DEAE6244FF646001EB612 /* TodosViewController.swift */; };
 		9E0DEAE9244FF9F2001EB612 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0DEAE8244FF9F2001EB612 /* Collection+Extensions.swift */; };
+		9EF699C324500C9B00D39EC0 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF699C224500C9B00D39EC0 /* API.swift */; };
+		9EF699C524500CBC00D39EC0 /* AmplifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF699C424500CBC00D39EC0 /* AmplifyService.swift */; };
+		9EF699C7245011E500D39EC0 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 9EF699C6245011E500D39EC0 /* awsconfiguration.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		135DDDBB0CB203EE3D6A470B /* Pods-Todo Serverless Comparison.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todo Serverless Comparison.release.xcconfig"; path = "Target Support Files/Pods-Todo Serverless Comparison/Pods-Todo Serverless Comparison.release.xcconfig"; sourceTree = "<group>"; };
 		9E0DEAC9244FF32E001EB612 /* Todo Serverless Comparison.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Todo Serverless Comparison.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E0DEACC244FF32E001EB612 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E0DEACE244FF32E001EB612 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +37,11 @@
 		9E0DEAE4244FF47C001EB612 /* TodosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosView.swift; sourceTree = "<group>"; };
 		9E0DEAE6244FF646001EB612 /* TodosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosViewController.swift; sourceTree = "<group>"; };
 		9E0DEAE8244FF9F2001EB612 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
+		9EF699C224500C9B00D39EC0 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = SOURCE_ROOT; };
+		9EF699C424500CBC00D39EC0 /* AmplifyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyService.swift; sourceTree = "<group>"; };
+		9EF699C6245011E500D39EC0 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
+		B1B60E74182BDAC7FF3455C1 /* Pods-Todo Serverless Comparison.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todo Serverless Comparison.debug.xcconfig"; path = "Target Support Files/Pods-Todo Serverless Comparison/Pods-Todo Serverless Comparison.debug.xcconfig"; sourceTree = "<group>"; };
+		C8734C73BFFAE765288F5FFD /* Pods_Todo_Serverless_Comparison.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Todo_Serverless_Comparison.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64F6E899CDD61F3C562CAF53 /* Pods_Todo_Serverless_Comparison.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +61,8 @@
 			children = (
 				9E0DEACB244FF32E001EB612 /* Todo Serverless Comparison */,
 				9E0DEACA244FF32E001EB612 /* Products */,
+				A54BD905CBAB581964B6326F /* Pods */,
+				FCC90F8AA6343EE7F578641D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +77,8 @@
 		9E0DEACB244FF32E001EB612 /* Todo Serverless Comparison */ = {
 			isa = PBXGroup;
 			children = (
+				9EF699C6245011E500D39EC0 /* awsconfiguration.json */,
+				9EF699C224500C9B00D39EC0 /* API.swift */,
 				9E0DEACC244FF32E001EB612 /* AppDelegate.swift */,
 				9E0DEACE244FF32E001EB612 /* SceneDelegate.swift */,
 				9E0DEAD2244FF330001EB612 /* Assets.xcassets */,
@@ -75,6 +90,7 @@
 				9E0DEAE4244FF47C001EB612 /* TodosView.swift */,
 				9E0DEAE6244FF646001EB612 /* TodosViewController.swift */,
 				9E0DEAE8244FF9F2001EB612 /* Collection+Extensions.swift */,
+				9EF699C424500CBC00D39EC0 /* AmplifyService.swift */,
 			);
 			path = "Todo Serverless Comparison";
 			sourceTree = "<group>";
@@ -87,6 +103,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A54BD905CBAB581964B6326F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1B60E74182BDAC7FF3455C1 /* Pods-Todo Serverless Comparison.debug.xcconfig */,
+				135DDDBB0CB203EE3D6A470B /* Pods-Todo Serverless Comparison.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FCC90F8AA6343EE7F578641D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8734C73BFFAE765288F5FFD /* Pods_Todo_Serverless_Comparison.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -94,9 +127,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E0DEADD244FF330001EB612 /* Build configuration list for PBXNativeTarget "Todo Serverless Comparison" */;
 			buildPhases = (
+				AB531045B8D947E7F438E0B4 /* [CP] Check Pods Manifest.lock */,
 				9E0DEAC5244FF32E001EB612 /* Sources */,
 				9E0DEAC6244FF32E001EB612 /* Frameworks */,
 				9E0DEAC7244FF32E001EB612 /* Resources */,
+				C3B6E3BE2EE68403B2C96E46 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EF699C7245011E500D39EC0 /* awsconfiguration.json in Resources */,
 				9E0DEAD9244FF330001EB612 /* LaunchScreen.storyboard in Resources */,
 				9E0DEAD6244FF330001EB612 /* Preview Assets.xcassets in Resources */,
 				9E0DEAD3244FF330001EB612 /* Assets.xcassets in Resources */,
@@ -153,17 +189,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AB531045B8D947E7F438E0B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Todo Serverless Comparison-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3B6E3BE2EE68403B2C96E46 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Todo Serverless Comparison/Pods-Todo Serverless Comparison-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Todo Serverless Comparison/Pods-Todo Serverless Comparison-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Todo Serverless Comparison/Pods-Todo Serverless Comparison-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9E0DEAC5244FF32E001EB612 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EF699C524500CBC00D39EC0 /* AmplifyService.swift in Sources */,
 				9E0DEAE5244FF47C001EB612 /* TodosView.swift in Sources */,
 				9E0DEACD244FF32E001EB612 /* AppDelegate.swift in Sources */,
 				9E0DEAE9244FF9F2001EB612 /* Collection+Extensions.swift in Sources */,
 				9E0DEAE3244FF425001EB612 /* TodoSourceOfTruth.swift in Sources */,
 				9E0DEAE1244FF362001EB612 /* Todo.swift in Sources */,
 				9E0DEAE7244FF646001EB612 /* TodosViewController.swift in Sources */,
+				9EF699C324500C9B00D39EC0 /* API.swift in Sources */,
 				9E0DEACF244FF32E001EB612 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +378,7 @@
 		};
 		9E0DEADE244FF330001EB612 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1B60E74182BDAC7FF3455C1 /* Pods-Todo Serverless Comparison.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -318,6 +399,7 @@
 		};
 		9E0DEADF244FF330001EB612 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 135DDDBB0CB203EE3D6A470B /* Pods-Todo Serverless Comparison.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
